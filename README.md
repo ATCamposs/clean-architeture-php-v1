@@ -1,0 +1,2 @@
+Uma entidade, precisa de uma identidade.
+Exemplo: não deveriamos precisar validar nossos dados baseado em um dominio externo, como um banco de dados auto incremental para gerar id. Essa validação deveria estar na própria entidade.

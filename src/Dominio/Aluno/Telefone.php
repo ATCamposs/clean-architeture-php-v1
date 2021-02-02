@@ -41,4 +41,14 @@ class Telefone
     {
         return "({$this->ddd}) {$this->numero}";
     }
+    //esses métodos só são possíveis pela __toString
+    public function ddd(): string
+    {
+        return $this->ddd;
+    }
+
+    public function numero(): string
+    {
+        return $this->numero;
+    }
 }

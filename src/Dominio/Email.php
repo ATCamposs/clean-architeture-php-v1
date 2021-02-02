@@ -1,6 +1,6 @@
 <?php
 
-namespace Alura\Arquitetura;
+namespace Alura\Arquitetura\Dominio;
 
 use InvalidArgumentException;
 //Esta classe não é uma entidade, mas sim um "objeto de valor"

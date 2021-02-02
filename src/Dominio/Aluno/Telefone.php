@@ -1,8 +1,7 @@
 <?php
 
-namespace Alura\Arquitetura\Aluno;
+namespace Alura\Arquitetura\Dominio\Aluno;
 
-use InvalidArgumentException;
 //Esta classe não é uma entidade, mas sim um "objeto de valor"
 class Telefone
 {

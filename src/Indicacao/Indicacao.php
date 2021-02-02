@@ -1,7 +1,8 @@
 <?php
 
-namespace Alura\Arquitetura;
+namespace Alura\Arquitetura\Indicacao;
 
+use Alura\Arquitetura\Aluno\Aluno;
 use DateTimeImmutable;
 
 class Indicacao

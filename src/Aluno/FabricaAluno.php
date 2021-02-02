@@ -3,7 +3,10 @@
 //Ela se torna desnecessária pela criação de um named constructor na
 //classe Aluno
 //https://verraes.net/2014/06/named-constructors-in-php/
-namespace Alura\Arquitetura;
+namespace Alura\Arquitetura\Aluno;
+
+use Alura\Arquitetura\Cpf;
+use Alura\Arquitetura\Email;
 
 //o nome fabrica/factory não tem a ver com o padrão factory
 //qualquer classe que seja uma "criadora" pode receber este

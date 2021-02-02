@@ -18,7 +18,7 @@ class Aluno
     // $aluno = Aluno::comCpfNomeEEmail('123123', 'suhdsahu', 'asd@sadsa.com');
     // e este método irá me retornar um aluno
     //(este método é um named constructor);
-    public static function comCpfNomeEmail(string $cpf, string $nome, string $email): self
+    public static function comCpfNomeEEmail(string $cpf, string $nome, string $email): self
     {
         return new Aluno(new Cpf($cpf), $nome, new Email($email));
     }
@@ -33,5 +33,28 @@ class Aluno
     {
         $this->telefones[] = new Telefone($ddd, $numero);
         return $this;
+    }
+
+    //CPF não é uma string, mas devido ao método __toString presente nele
+    //essa conversão é possível.(todos esses métodos)
+    public function cpf(): string
+    {
+        return $this->cpf;
+    }
+
+    public function nome(): string
+    {
+        return $this->nome;
+    }
+
+    public function email(): string
+    {
+        return $this->email;
+    }
+
+    /** @return Telefone[] */
+    public function telefones(): array
+    {
+        return $this->telefones;
     }
 }

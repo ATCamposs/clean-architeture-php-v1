@@ -12,6 +12,7 @@ class Aluno
     private string $nome;
     private Email $email;
     private array $telefones;
+    private string $senha;
 
     //Todo trabalho da FabricaAluno está declarado neste método
     //muito mais simples e prático. Agora posso usar
